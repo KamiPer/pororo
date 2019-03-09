@@ -1,0 +1,290 @@
+/* 화면 */
+body {
+    background: white;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 영역 잡아주기 */
+.bbo {
+    position: relative;  
+    display: flex;
+    justify-content: center;
+    top: 50px;
+    width: 600px;  
+    height: 1075px;  
+    background-color: white;
+}
+
+/* 머리 */
+.bbo .head {
+    position: absolute;  
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 130px;
+    width: 270px;  
+    height: 270px;  
+    border-radius: 100%; 
+    background-color: rgb(0, 105, 167);  
+}
+
+/* 얼굴 */
+.head .face{
+    position: absolute;  
+    bottom: 5px;  
+    left: 5px;
+    width: 260px;  
+    height: 260px;  
+    border-radius: 100%;  
+    background-color: white;  
+    z-index: 2;
+} 
+
+/* 입 */
+.head .mouth { 
+    position: absolute; 
+    bottom: 30px; 
+    width: 40px; 
+    height: 45px; 
+    border-radius: 100%; 
+    background-color:rgb(250, 197, 67);
+    z-index: 3;
+} 
+
+/* 입 안 */ 
+.bbo .inside {
+    position: absolute;
+    bottom: 39px;
+    width: 23px;
+    height: 23px;
+    transform: rotate( 45deg );
+    background-color: rgb(80, 29, 8);
+    z-index: 4;
+}
+
+/* 안경 */
+.head .glasses { 
+    position: absolute;  
+    top: 104px;  
+    width: 90px; 
+    height: 90px;  
+    border-radius: 100%; 
+    background-color: rgb(228, 130,50);  
+    z-index: 5;
+} 
+.glasses.left { left: 33px; } 
+.glasses.right { right: 33px; }
+
+/* 안경알 */
+.head .lense { 
+    position: absolute;  
+    top: 114px;  
+    width: 70px; 
+    height: 70px;  
+    border-radius: 100%; 
+    background-color: white;  
+    z-index: 6;
+} 
+.lense.left { left: 43px; } 
+.lense.right { right: 43px; }
+
+/* 눈 */
+.head .eye { 
+    position: absolute; 
+    top: 142px;  
+    width: 16px; 
+    height: 16px;  
+    border-radius: 100%;  
+    background: #000; 
+    z-index: 7;
+} 
+.eye.left { left: 79px; } 
+.eye.right { right: 79px; }
+
+/* 눈 디테일 */ 
+.head .detail {
+    position: absolute;
+    top: 143px;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: white;
+    z-index: 8;
+}
+.detail.left { left: 82px; }
+.detail.right { right: 87px; }
+
+/* 안경 코받침대 */
+.head .between {
+    position: absolute;
+    top: 138px;
+    width: 0;
+    height: 0;
+    z-index: 3;
+}
+.between.left { 
+    left: 123px;
+    border-top: 12px solid transparent;
+    border-left: 24px solid rgb(250, 243, 100);
+    border-bottom: 12px solid transparent;
+}
+.between.right { 
+    right: 123px;
+    border-top: 12px solid transparent;
+    border-right: 24px solid rgb(250, 243, 100);
+    border-bottom: 12px solid transparent;
+}
+
+/* 안경 끈 */
+.head .string {
+    position: absolute;
+    top: 138px;
+    width: 50px;
+    height: 20px; 
+    background-color: rgb(228, 130,50);
+    z-index: 3;
+}
+.string.left { 
+    left: -13px; 
+    border-bottom-left-radius: 16px; 
+}
+.string.right { 
+    right: -13px; 
+    border-bottom-right-radius: 16px;
+
+}
+
+/* 헬멧 */
+.bbo .helmet {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 105px;
+    width: 300px;
+    height: 125px;
+    background-color: rgb(252, 217, 22);
+    border-top-left-radius: 125px; 
+    border-top-right-radius: 125px;
+    z-index: 3;
+}
+
+/* 헬멧 귀부분 */
+.head .side {
+    position: absolute;
+    top: 78px;
+    width: 140px;
+    height: 30px;
+    background: white;
+    border-color: rgb(252, 217, 22);
+    border-style: solid;
+    border-width: 0px 0px 40px 0px;
+    border-radius: 100%;
+}
+.side.left { 
+    left: -51px; 
+    transform: rotate( 90deg );
+}
+.side.right {
+    right: -51px;
+    transform: rotate( -90deg );
+}
+
+/* 헬멧 앞부분 */
+.head .cap {
+    position: absolute;
+    top: 62px;
+    width: 249px;
+    height: 50px;
+    background-color: white;
+    border-color: rgb(255, 238, 139);
+    border-style: solid;
+    border-width: 0px 0px 30px 0px;
+    border-radius: 100%;
+    transform: rotate( 180deg );
+    z-index: 4;
+}
+
+/* 헬멧 로고 */
+.bbo .logo {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    top: 105px;
+    width: 75px;
+    height: 75px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background-color: rgb(0, 105, 167);  
+    z-index: 5;
+}
+
+/* 글자 */ 
+.logo .text {
+    position: absolute;
+    top: -65px;
+    color: orange;
+    font-size: 65px;
+    font-family: 'Fredoka One', cursive;
+    -moz-text-stroke: 2px white;
+    -webkit-text-stroke: 2px white;
+    z-index: 6;
+}
+
+/* 몸통 */
+.bbo .health {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 380px;
+    width: 210px;
+    height: 300px;
+    background-color: rgb(0, 105, 167); 
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+/* 배 */
+.bbo .stomach {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 25px;
+    width: 161px;
+    height: 230px;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background-color: white;
+    z-index: 2;
+}
+
+/* 팔 */
+.health .arm {
+    position: absolute;
+    top: 30px;
+    width: 180px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: rgb(0, 105, 167);
+}
+.arm.left { 
+    left: -70px;
+    transform: rotate( 145deg );
+}
+.arm.right { 
+    right: -70px; 
+    transform: rotate( -145deg );
+}
+
+/* 발 */
+.health .foot {
+    position: absolute;
+    bottom: -10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: rgb(242, 198, 67);
+    z-index: 2;
+}
+.foot.left { left: -10px; }
+.foot.right { right: -10px; }
